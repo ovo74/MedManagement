@@ -1,0 +1,20 @@
+﻿@model IEnumerable<MedManagement.Models.Device>
+
+<h2>Device List</h2>
+<table>
+    <tr>
+        <th>Device Name</th>
+        <th>IP Address</th>
+        <th>Status</th>
+        <th>Last Updated</th>
+    </tr>
+    @foreach (var device in Model)
+    {
+        <tr>
+            <td>@device.DeviceName</td>
+            <td>@device.IPAddress</td>
+            <td>@device.Status</td>
+            <td>@device.LastUpdated</td>
+        </tr>
+    }
+</table>
