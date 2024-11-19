@@ -11,14 +11,14 @@ namespace MedManagement.Models
 
         [Required]
         [Column("UserName", TypeName = "NVARCHAR(100)")]
-        public string UserName { get; set; }
+        public required string UserName { get; set; }
 
         [Required]
         [Column("PasswordHash", TypeName = "NVARCHAR(200)")]
-        public string PasswordHash { get; set; }
+        public required string PasswordHash { get; set; }
 
         [Required]
         [Column("Role", TypeName = "NVARCHAR(50)")]
-        public string Role { get; set; }
+        public required string Role { get; set; }
     }
 }
